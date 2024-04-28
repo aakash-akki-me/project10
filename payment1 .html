@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <title>Checkout</title>
+</head>
+<body>
+    <div class="payment-section">
+        <div class="left-div">
+            <form>
+                <h2>Checkout</h2>
+                <h1>Contact details</h1>
+                <label for="">Email ID</label><br>
+                <input type="email" name="" id="" placeholder="John Doe">
+                <h1>Payment</h1>
+                <div class="card">
+                    <div class="upper">
+                        <div class="methods">
+                            <button>
+                                <i class="fa-regular fa-credit-card"></i>
+                                <p>Card</p></button>
+                            <button>
+                                <i class="fa-solid fa-bitcoin-sign"></i>
+                               <p> Crypto </p>
+                            </button>
+                            <button>
+                                <i class="fa-solid fa-building-columns"></i>
+                                <p> Bank </p></button>
+                            <button>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                        </div>
+                        <label for="">Card Number</label><br>
+                        <input type="text" name="" id="" placeholder="John Doe">
+                    </div>
+                    <div class="lower-input">
+                        <div class="col">
+                            <label for="">Expiry</label><br>
+                            <input type="text" name="" id="" placeholder="MM/YY"><br>
+                            <label for="">Country</label><br>
+                            <input list="countries" name="country" placeholder="India">
+                                <datalist id="countries">
+                                <option value="United States">
+                                <option value="Canada">
+                                <option value="Australia">
+                                </datalist>
+                        </div>
+                        <div class="col-right">
+                            <label for="">CVC</label><br>
+                            <input type="text" name="" id="" placeholder="***"><br>
+                            <label for="">Zip</label><br>
+                            <input type="text" name="" id="" placeholder="xxxxx">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right-div">
+            <div class="content">
+                <h1>Order Summery</h1>
+                <div class="card2">
+                    <label for="">Enter Coupon Code</label>
+                    <div class="coupon">
+                        <input type="text" placeholder="COUPON CODE">
+                        <button> Apply Coupon</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Sub Total</td>
+                            <td>₹4,800</td>
+                        </tr>
+                        <tr>
+                            <td>Taxes(if applicable)</td>
+                            <td>₹199</td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td>₹0</td>
+                        </tr>
+                        <tr class="final">
+                            <td>Total</td>
+                            <td>₹4,999</td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="pay" type="submit">Pay Now ₹4,999</button>
+                <div id="cart-icons">
+                    <img
+                      src="https://dunmoremachales.com/wp-content/uploads/2022/03/shutterstock_1860566662-copy.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="height: 28px; margin-top: 1%"
+                      src="https://hostbillapp.com/appstore/payment_razorpay/images/logo.png"
+                      alt=""
+                    />
+                    <img
+                      src="https://thumbs.dreamstime.com/b/secure-payment-credit-card-icon-shield-transaction-vector-stock-illustration-261428997.jpg"
+                      alt=""
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
